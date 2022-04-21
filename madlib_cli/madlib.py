@@ -29,10 +29,10 @@ def parse_template(template_string):
     return(stripped_str, results_inside_bracket)
 
 
-def merge():
-    actual = merge("It was a {} and {} {}.", ("dark", "stormy", "night"))
-    expected = "It was a dark and stormy night."
-    pass
+def merge(stripped_str, results_inside_bracket):
+    return stripped_str.format(*results_inside_bracket)
+    # actual = merge("It was a {} and {} {}.", ("dark", "stormy", "night"))
+    # expected = "It was a dark and stormy night."
 
 
 def welcome():

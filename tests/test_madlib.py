@@ -20,7 +20,7 @@ def test_parse_template():
     assert actual_parts == expected_parts
     return()
 
-@pytest.mark.skip("pending")
+
 def test_merge():
     actual = merge("It was a {} and {} {}.", ("dark", "stormy", "night"))
     expected = "It was a dark and stormy night."
